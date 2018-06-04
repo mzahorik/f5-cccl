@@ -831,6 +831,18 @@ definitions:
           minLength: 1
           maxLength: 64
 
+      persist:
+        description: >
+          Specifies the full path of the default persistence profile to define session
+          stickiness
+        type: "string"
+
+      fallbackPersistence:
+        description: >
+          Specifies the full path of the persistence profile to use if a primary persistence
+          profile is not applicable
+        type: "string"
+
     required:
       - "destination"
       - "name"
